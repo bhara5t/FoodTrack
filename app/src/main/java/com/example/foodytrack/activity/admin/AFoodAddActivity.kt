@@ -34,8 +34,8 @@ class AFoodAddActivity : AppCompatActivity() {
     private var imageUri: Uri? = null
     private val firestore = FirebaseFirestore.getInstance()
 
-    private val IMGUR_CLIENT_ID = "49604f820671051"
-    private val IMGUR_UPLOAD_URL = "https://api.imgur.com/3/image"
+    private val IMGUR_CLIENT_ID = "your_client_id"
+    private val IMGUR_UPLOAD_URL = "your_image_url"
 
     private val getImage = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
         uri?.let {

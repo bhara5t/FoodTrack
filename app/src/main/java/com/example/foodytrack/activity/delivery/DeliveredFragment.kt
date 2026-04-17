@@ -49,8 +49,8 @@ class DeliveredFragment : Fragment() {
         progressBar.visibility = View.VISIBLE
         completedOrdersList.clear()
 
-        db.collection("delivered_orders") // Match your Firestore collection name
-            .orderBy("deliveryTime", Query.Direction.DESCENDING) // Add timestamp field
+        db.collection("delivered_orders")
+            .orderBy("deliveryTime", Query.Direction.DESCENDING) 
             .addSnapshotListener { querySnapshot, error ->
                 if (error != null) {
                     progressBar.visibility = View.GONE
