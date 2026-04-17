@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.FoodyTrack" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+    <style name="MyText">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="MyBackground">
+        <item name="android:background">#000</item>
+    </style>
+
+</resources>

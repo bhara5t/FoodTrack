@@ -1,0 +1,22 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+    <color name="primaryColor">#FA6839</color>
+    <color name="primaryLightColor">#9cff57</color>
+    <color name="primaryDarkColor">#1faa00</color>
+    <color name="secondaryColor">#3d5afe</color>
+    <color name="secondaryLightColor">#8187ff</color>
+    <color name="secondaryDarkColor">#0031ca</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">@color/white</color>
+    <color name="alpha_90_white">#E6FFFFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="cardBackground">#33FFFFFF</color>
+    <color name="starColor">#FFAB00</color>
+    <color name="colorFavourite">#F44336</color>
+    <color name="error">#B71C1C</color>
+    <color name="orange">#FFA500</color>
+    <color name="green">#4CAF50</color>
+    <color name="gray">#808080</color>
+
+</resources>

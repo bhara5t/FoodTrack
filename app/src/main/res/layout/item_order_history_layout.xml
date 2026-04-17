@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:strokeColor="@color/material_on_surface_stroke"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvFoodName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvTotalPrice"
+            android:layout_marginEnd="8dp"
+            tools:text="Burger with Cheese" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty: 2"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFoodName"
+            android:layout_marginTop="4dp"
+            tools:text="Qty: 2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvOrderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30 AM"
+            android:textSize="12sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvQuantity"
+            android:layout_marginTop="4dp"
+            tools:text="10:30 AM" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvPending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:textSize="12sp"
+            android:textColor="?attr/colorError"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderTime"
+            android:layout_marginTop="4dp"
+            tools:text="Pending" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19.98"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="16dp"
+            tools:text="19.98" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
